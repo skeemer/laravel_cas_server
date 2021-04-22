@@ -38,7 +38,7 @@ class ValidateControllerTest extends TestCase
 {
     public static $functions;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         self::$functions = Mockery::mock();

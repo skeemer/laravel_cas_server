@@ -36,7 +36,7 @@ namespace Leo108\CAS\Http\Controllers {
     {
         public static $functions;
 
-        public function setUp()
+        public function setUp(): void
         {
             parent::setUp();
             self::$functions = Mockery::mock();

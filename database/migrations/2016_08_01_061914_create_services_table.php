@@ -13,7 +13,7 @@ class CreateServicesTable extends Migration
     public function up()
     {
         Schema::create('cas_services', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('name')->charset('utf8')->collate('utf8_general_ci')->unique();
             $table->boolean('allow_proxy')->default(false);
             $table->boolean('enabled')->default(true);

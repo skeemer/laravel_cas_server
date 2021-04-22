@@ -11,7 +11,7 @@ return [
     'user_table'        => [
         'id'    => 'id',
         'name'  => 'users',
-        'model' => \App\User::class, //change to your user model class
+        'model' => \App\Models\User::class, //change to your user model class
     ],
     'router'            => [
         'prefix'      => 'cas',
